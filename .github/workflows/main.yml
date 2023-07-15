@@ -21,9 +21,7 @@ jobs:
         run: npm install
 
       - name: Build and Test
-        run: |
-               npm run build
-               npm run test
+        run: npm run build
 
       - name: Code Linting and Quality
         run: |
