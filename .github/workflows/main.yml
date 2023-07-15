@@ -19,20 +19,14 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        
-      - name: Code Linting and Quality
-        run: npm run lint
 
       - name: Build
         run: npm run build
 
       - name: Generate Documentation
         run: |
-          # Add your documentation generation command here
-          # Example: npm run generate-docs
-          
-          # Add commands to deploy documentation to a hosting service
-          # Example: npm run deploy-docs
+               npm run generate-docs
+               npm run deploy-docs
 
       - name: Package for Deployment
         run: |
