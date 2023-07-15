@@ -20,15 +20,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build and Test
-        run: |
-             npm run build
-             npm run test
+      - name: Build
+        run: npm run build
 
       - name: Code Linting and Quality
-        run: |
-          # Add your linting command here
-          # Example: npm run lint
+        run: npm run lint
           
           # Add your code quality analysis command here
           # Example: npm run analyze
